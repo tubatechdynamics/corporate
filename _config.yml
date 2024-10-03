@@ -1,0 +1,10 @@
+# _config.yml
+title: Tuba Tech Dynamics
+email: info@tubatechdynamics.com
+description: "Empowering Non-Profits with Affordable Tech Solutions"
+baseurl: ""
+url: "https://yourusername.github.io/yourrepository" # Update with your GitHub Pages URL
+theme: minima
+plugins:
+  - jekyll-feed
+markdown: kramdown

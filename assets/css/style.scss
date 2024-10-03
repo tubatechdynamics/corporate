@@ -1,0 +1,98 @@
+/* assets/css/style.scss */
+---
+---
+
+$black: #000000;
+$licorice: #1d140c;
+$eggshell: #f0e8d5;
+$pale-dogwood: #d6b6b1;
+$satin-sheen-gold: #b39b45;
+$deep-brown: #1c110a;
+$darker-brown: #140c07;
+$near-black: #080504;
+
+body {
+  background-color: $eggshell;
+  color: $licorice;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: $deep-brown;
+  color: $eggshell;
+  padding: 20px;
+}
+
+nav a {
+  margin: 0 15px;
+  color: $eggshell;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: $satin-sheen-gold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $deep-brown;
+}
+
+button {
+  background-color: $satin-sheen-gold;
+  color: $licorice;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: $pale-dogwood;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.hero {
+  background-color: $pale-dogwood;
+  padding: 50px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+.placeholder-image {
+  background-color: $eggshell;
+  border: 2px dashed $licorice;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  color: $licorice;
+  margin-bottom: 20px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .hero, .section {
+    padding: 20px 0;
+  }
+}

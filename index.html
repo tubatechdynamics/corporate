@@ -1,0 +1,51 @@
+---
+layout: default
+title: Home
+---
+
+<div class="hero">
+  <!-- Hero Image -->
+  <img src="#" alt="Hero Image Placeholder" style="width: 100%; height: auto;">
+  <!-- AI Image Generation Instructions:
+       Create a dynamic, sleek illustration of a small business team collaborating with non-profit representatives, featuring subtle cat motifs and using Tuba Tech Dynamics' color palette. Incorporate futuristic elements to convey sleek futurism.
+  -->
+  <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: {{ site.data.colors.eggshell }};">
+    <h1 style="font-size: 3em;">Empowering Non-Profits with Affordable Tech Solutions</h1>
+    <button onclick="window.location.href='{{ '/contact/' | relative_url }}'">Get Started</button>
+  </div>
+</div>
+
+<div class="section" style="text-align: center;">
+  <h2>Our Services</h2>
+  <p>At Tuba Tech Dynamics, we specialize in creating affordable, business card-style websites for small non-profits in King County. Think of us as your trusted tech partner.</p>
+  <button onclick="window.location.href='{{ '/services/' | relative_url }}'">Learn More</button>
+</div>
+
+<div class="section" style="background-color: {{ site.data.colors.pale-dogwood }};">
+  <h2>Our Impact</h2>
+  <p>We're on a mission to help non-profits make their tech purr with efficiency. Ready to join us?</p>
+  <button onclick="window.location.href='{{ '/impact/' | relative_url }}'">See Our Impact</button>
+</div>
+
+<div class="section" style="text-align: center;">
+  <h2>Testimonials</h2>
+  <!-- Carousel of Testimonials -->
+  <div id="testimonials-carousel">
+    <div class="testimonial" style="display: block;">
+      <p>"Tuba Tech Dynamics provided us with a professional website that has significantly improved our visibility." - Non-Profit A</p>
+    </div>
+    <div class="testimonial" style="display: none;">
+      <p>"The optional chatbot feature has made it easier for our volunteers to sign up, streamlining our operations." - Non-Profit B</p>
+    </div>
+  </div>
+  <!-- Simple JavaScript to rotate testimonials -->
+  <script>
+    let testimonials = document.querySelectorAll('#testimonials-carousel .testimonial');
+    let index = 0;
+    setInterval(() => {
+      testimonials[index].style.display = 'none';
+      index = (index + 1) % testimonials.length;
+      testimonials[index].style.display = 'block';
+    }, 5000);
+  </script>
+</div>
