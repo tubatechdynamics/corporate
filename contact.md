@@ -8,7 +8,7 @@ permalink: /contact/
 
 Ready to support non-profits with cutting-edge technology solutions or learn more about partnering with us? Reach out today!
 
-<form action="https://formsubmit.co/info@tubatechdynamics.com" method="POST">
+<form action="https://formsubmit.co/732cae4adb1759e0e52ac2c19691a15a" method="POST">
   <!-- Add a hidden field to redirect to a thank you page (optional) -->
   <input type="hidden" name="_next" value="{{ '/thank-you/' | relative_url }}">
   <!-- Protect from spam -->
