@@ -12,11 +12,11 @@ Tuba Tech Dynamics was born out of a passion for community and technology. Our s
 
 ## Meet the Founders
 
-### Jude
+### Jude Evangeline
 
 With a background in social work and political advocacy, Jude brings an intimate understanding of the challenges non-profits face in achieving their mission.
 
-### Jaycee
+### Jaycee Lydian
 
 Jaycee’s expertise in coding and AI prompt development makes technology accessible, ensuring non-profits can leverage digital tools effectively.
 
@@ -27,4 +27,7 @@ We empower non-profit organizations by providing technology solutions that foste
 ## Our Values
 
 - Community Focus
-- Emp
+- Empathy
+- Accessibility
+- Integrity
+- Collaboration
