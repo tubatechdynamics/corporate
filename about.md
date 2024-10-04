@@ -1,36 +1,30 @@
 ---
-layout: default
-title: About Us
+layout: page
+title: "Our Story"
+meta_title: "About Us | Tuba Tech Dynamics Corporate"
+meta_description: "Learn about Tuba Tech Dynamics, our mission to support non-profits, and the founders driving community-focused tech solutions."
 permalink: /about/
 ---
 
-# Our Story
+Tuba Tech Dynamics was born out of a passion for community and technology. Our small, dedicated team is committed to helping non-profits maximize their impact through innovative technology partnerships.
 
-Tuba Tech Dynamics was born out of a passion for community and technology. We're a small, dedicated team aiming to make a big impact.
-
-![Founders Image Placeholder](#){:class="placeholder-image"}
-<!-- AI Image Generation Instructions:
-     Create an illustration of the two founders, Jude and Jaycee, collaborating in a modern workspace, incorporating subtle cat motifs and using the specified color palette.
--->
+![An illustration of the two founders, Jude and Jaycee along with Tuba the cat.](/assets/images/team.png)
 
 ## Meet the Founders
 
 ### Jude
 
-With a background in social work and political advocacy, Jude understands the unique challenges non-profits face.
+With a background in social work and political advocacy, Jude brings an intimate understanding of the challenges non-profits face in achieving their mission.
 
 ### Jaycee
 
-Jaycee brings expertise in coding and AI prompt development, making tech accessible and efficient for our clients.
+Jaycee’s expertise in coding and AI prompt development makes technology accessible, ensuring non-profits can leverage digital tools effectively.
 
 ## Our Mission
 
-To empower small non-profit organizations in King County by providing affordable, essential web solutions that enhance their ability to serve their communities effectively.
+We empower non-profit organizations by providing technology solutions that foster sustainable growth, scalability, and enhanced community engagement.
 
 ## Our Values
 
 - Community Focus
-- Empathy
-- Accessibility
-- Integrity
-- Collaboration
+- Emp

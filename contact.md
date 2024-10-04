@@ -1,12 +1,12 @@
 ---
-layout: default
-title: Contact Us
+layout: page
+title: "Contact Us"
+meta_title: "Contact Tuba Tech Dynamics Corporate"
+meta_description: "Contact Tuba Tech Dynamics to learn more about supporting non-profits through technology or how we can collaborate to drive social impact."
 permalink: /contact/
 ---
 
-# Get in Touch
-
-Ready to enhance your organization's tech? Reach out to us today!
+Ready to support non-profits with cutting-edge technology solutions or learn more about partnering with us? Reach out today!
 
 <form action="https://formsubmit.co/info@tubatechdynamics.com" method="POST">
   <!-- Add a hidden field to redirect to a thank you page (optional) -->
