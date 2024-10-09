@@ -1,24 +1,71 @@
-<!-- _layouts/default.html -->
 <!DOCTYPE html>
 <html lang="en">
-{% include "head.njk" %}
-<body>
-  {% include "header.njk" %}
+  {% include "head.njk" %}
+  <body>
+    {% include "header.njk" %}
+    <main>
+      {{ content | safe }}
+    </main>
+    {% include "footer.njk" %}
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ site.google_analytics }}', {
+        'send_page_view': true,
+        'custom_map': {
+          'dimension1': 'page_path',
+          'dimension2': 'user_agent'
+        }
+      });
 
-  <main class="container">
-    {{ content | safe }}
-  </main>
+      // Track form submissions
+      document.addEventListener('submit', function(event) {
+        if (event.target.tagName === 'FORM') {
+          var formAction = event.target.getAttribute('action');
+          var eventCategory, eventLabel;
+          
+          if (formAction.includes('formsubmit.co')) {
+            eventCategory = 'Contact Form';
+            eventLabel = 'Contact Form Submission';
+          } else if (formAction.includes('mailerlite.com')) {
+            eventCategory = 'Newsletter';
+            eventLabel = 'Newsletter Subscription';
+          } else {
+            eventCategory = 'Other Form';
+            eventLabel = formAction;
+          }
 
-  {% include "footer.njk" %}
+          gtag('event', 'form_submission', {
+            'event_category': eventCategory,
+            'event_label': eventLabel
+          });
+        }
+      });
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TMT9YPYDW"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', '{{ site.google_analytics }}');
-  </script>
-</body>
+      // Track outbound links
+      document.addEventListener('click', function(event) {
+        var link = event.target.closest('a');
+        if (link && link.hostname !== window.location.hostname) {
+          gtag('event', 'outbound_link', {
+            'event_category': 'Engagement',
+            'event_label': link.href
+          });
+        }
+      });
+    </script>
+    <!-- End Google Analytics -->
+    <!-- MailerLite Universal -->
+    <script>
+      (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+      .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+      n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+      (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+      ml('account', '1128411');
+    </script>
+    <!-- End MailerLite Universal -->
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  </body>
 </html>

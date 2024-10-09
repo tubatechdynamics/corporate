@@ -1,8 +1,12 @@
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title }} | Tuba Tech Dynamics</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{{ page.description or site.description }}">
-  <meta name="keywords" content="Non-Profit, Affordable Websites, Seattle, Tech Solutions, AI Enhancements">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ (page.meta_title or page.title) or site.seo_title }}</title>
+  <meta name="description" content="{{ page.meta_description or site.seo_description }}">
+  <meta name="keywords" content="Non-profit technology solutions, Custom internal applications for non-profits, AI-powered visualizations, Public engagement tools for non-profits, Tuba Tech Dynamics, Non-profit data analytics, Non-profit custom software development">
   <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+  <link rel="icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 </head>
