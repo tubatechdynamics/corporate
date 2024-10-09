@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: page.njk
+templateEngineOverride: 'njk,md'
 title: "Our Story"
 meta_title: "About Us | Tuba Tech Dynamics Corporate"
 meta_description: "Learn about Tuba Tech Dynamics, our mission to support non-profits, and the founders driving community-focused tech solutions."
-permalink: /about/
+permalink: /about/index.html
 ---
 
 Tuba Tech Dynamics was born out of a passion for community and technology. Our small, dedicated team is committed to helping non-profits maximize their impact through innovative technology partnerships.

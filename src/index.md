@@ -1,6 +1,9 @@
 ---
-layout: default
-title: Home
+layout: default.njk
+templateEngineOverride: njk,md
+permalink: /
+title: Tuba Tech Dynamics
+meta_title: Tuba Tech Dynamics | Empowering Non-Profits with Innovative Technology
 ---
 
 <div class="hero">

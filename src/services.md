@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: page.njk
+templateEngineOverride: njk,md
 title: "Our Approach"
 meta_title: "Our Approach | Tuba Tech Dynamics Corporate"
 meta_description: "Discover how Tuba Tech Dynamics supports non-profit organizations through strategic technology partnerships, delivering impact-driven solutions that foster growth and sustainability."
-permalink: /services/
+permalink: /services/index.html
 ---
 
 At Tuba Tech Dynamics, we believe in empowering non-profits through tailored technology partnerships that enable them to drive meaningful change and maximize their impact. Our focus is on providing solutions that align with the specific needs of non-profits, fostering long-term growth and sustainability.

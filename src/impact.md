@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: page.njk
+templateEngineOverride: njk,md
 title: "Our Impact"
 meta_title: "Our Impact | Tuba Tech Dynamics Corporate"
 meta_description: "Tuba Tech Dynamics is in the early stages of supporting non-profits, with a clear vision for future growth and meaningful impact through technology solutions."
-permalink: /impact/
+permalink: /impact/index.html
 ---
 
 At Tuba Tech Dynamics, we’re just getting started, but we have big ambitions. Our mission is to empower non-profits with technology solutions that will drive real-world results, from increased digital engagement to operational efficiency.

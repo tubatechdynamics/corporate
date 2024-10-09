@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: page.njk
+templateEngineOverride: njk,md
 title: "Contact Us"
 meta_title: "Contact Tuba Tech Dynamics Corporate"
 meta_description: "Contact Tuba Tech Dynamics to learn more about supporting non-profits through technology or how we can collaborate to drive social impact."
-permalink: /contact/
+permalink: /contact/index.html
 ---
 
 Ready to support non-profits with cutting-edge technology solutions or learn more about partnering with us? Reach out today!

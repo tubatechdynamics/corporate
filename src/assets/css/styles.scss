@@ -1,7 +1,22 @@
 // Import Google Fonts
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
-// Color palette
+// new color palette
+$pale-purple: #e5d4edff;
+$aquamarine: #9DEDD5;
+$dark-cyan: #188C7F;
+$darkest-cyan: #062320;
+$light-blue: #C1E1E1;
+$lavender: #D3DBE7;
+$medium-slate-blue: #6d72c3ff;
+$rebecca-purple: #5941a9ff;
+$dark-purple: #341F47;
+$darkest-purple: #1d1128ff;
+$black: #000000;
+$davys-gray: #514f59ff;
+$white: #ffffff;
+
+// old color palette
 $black: #000000;
 $licorice: #1d140c;
 $eggshell: #f0e8d5;
@@ -12,12 +27,12 @@ $darker-brown: #140c07;
 $near-black: #080504;
 
 // Updated color usage
-$primary-text-color: $deep-brown;
-$header-bg-color: $eggshell;
-$primary-bg-color: #ffffff;
-$accent-color: $pale-dogwood;
-$secondary-accent-color: $satin-sheen-gold;
-$cta-color: $deep-brown;
+$primary-text-color: $darkest-purple;
+$header-bg-color: $pale-purple;
+$primary-bg-color: $white;
+$accent-color: $aquamarine;
+$secondary-accent-color: $medium-slate-blue;
+$cta-color: $dark-cyan;
 
 // Global styles
 body {
@@ -39,24 +54,24 @@ body {
 
 // Typography
 h1, h2, h3, h4, h5, h6 {
-  color: $deep-brown;
+  color: $dark-purple;
 }
 
 a {
-  color: $satin-sheen-gold;
+  color: $medium-slate-blue;
   text-decoration: underline;
   transition: color 0.3s ease;
 
   &:hover {
-    color: darken($satin-sheen-gold, 10%);
+    color: darken($medium-slate-blue, 10%);
   }
 
   &:visited {
-    color: mix($satin-sheen-gold, $deep-brown, 70%);
+    color: mix($medium-slate-blue, $dark-purple, 70%);
   }
 
   &:active {
-    color: $deep-brown;
+    color: $dark-purple;
   }
 }
 
@@ -65,16 +80,16 @@ a {
 .contact-button {
   display: inline-block;
   padding: 12px 24px;
-  background-color: $satin-sheen-gold;
-  color: $eggshell;
+  background-color: $dark-cyan;
+  color: $white;
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: darken($satin-sheen-gold, 10%);
-    color: $eggshell;
+    background-color: darken($dark-cyan, 10%);
+    color: $white;
   }
 }
 
@@ -134,19 +149,19 @@ header {
     }
 
     a {
-      color: $licorice;
+      color: $darkest-purple;
       text-decoration: none;
       font-weight: bold;
       font-size: 0.9em;
       transition: color 0.3s ease;
 
       &:hover, &:visited, &:active {
-        color: $licorice;
+        color: $darkest-purple;
         text-decoration: none;
       }
 
       &:hover {
-        color: $satin-sheen-gold;
+        color: $medium-slate-blue;
       }
     }
   }
@@ -185,7 +200,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba($deep-brown, 0.7);
+    background-color: rgba($dark-purple, 0.7);
     z-index: 2;
   }
 
@@ -193,13 +208,13 @@ header {
     position: relative;
     z-index: 3;
     text-align: center;
-    color: $eggshell;
+    color: $white;
 
     h1 {
       font-size: 2.5em;
       margin-bottom: 15px;
       text-shadow: 2px 2px 4px rgba($black, 0.5);
-      color: $eggshell !important; // Force override
+      color: $white !important; // Force override
     }
 
     .hero-subtitle {
@@ -212,7 +227,7 @@ header {
       padding: 12px 24px;
       background-color: transparent;
       font-size: 1.1em;
-      border: 2px solid $eggshell;
+      border: 2px solid $white;
       border-radius: 50px;
       position: relative;
       overflow: hidden;
@@ -227,13 +242,13 @@ header {
         left: -100%;
         width: 100%;
         height: 100%;
-        background-color: $satin-sheen-gold;
+        background-color: $medium-slate-blue;
         transition: all 0.3s ease;
         z-index: -1;
       }
 
       &:hover {
-        color: $deep-brown;
+        color: $white;
 
         &:before { left: 0; }
       }
@@ -254,13 +269,13 @@ header {
 }
 
 .services-overview {
-  background-color: $licorice;
-  color: $eggshell;
+  background-color: $darkest-purple;
+  color: $white;
 
   h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: $eggshell;
+    color: $white;
   }
 
   p {
@@ -271,7 +286,7 @@ header {
 }
 
 .impact-overview {
-  background-color: $pale-dogwood;
+  background-color: $aquamarine;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -285,7 +300,7 @@ header {
     font-size: 1.5em;
     line-height: 1.4;
     margin-bottom: 30px;
-    color: $deep-brown;
+    color: $darkest-purple;
   }
 }
 
@@ -392,8 +407,8 @@ img {
 
 // Footer styles
 footer {
-  background-color: $licorice;
-  color: $eggshell;
+  background-color: $darkest-purple;
+  color: $white;
   padding: 20px 0;
   text-align: center;
 
@@ -421,12 +436,12 @@ footer {
     }
 
     a {
-      color: $eggshell;
+      color: $white;
       text-decoration: none;
       transition: color 0.3s ease;
 
       &:hover {
-        color: $satin-sheen-gold;
+        color: $medium-slate-blue;
       }
     }
   }

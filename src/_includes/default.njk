@@ -1,15 +1,15 @@
 <!-- _layouts/default.html -->
 <!DOCTYPE html>
 <html lang="en">
-{% include head.html %}
+{% include "head.njk" %}
 <body>
-  {% include header.html %}
+  {% include "header.njk" %}
 
   <main class="container">
-    {{ content }}
+    {{ content | safe }}
   </main>
 
-  {% include footer.html %}
+  {% include "footer.njk" %}
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TMT9YPYDW"></script>

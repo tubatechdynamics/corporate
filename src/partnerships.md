@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: page.njk
+templateEngineOverride: njk,md
 title: "Partnerships and Collaborations"
 meta_title: "Partnerships | Tuba Tech Dynamics Corporate"
 meta_description: "Explore how Tuba Tech Dynamics collaborates with like-minded organizations and partners to drive innovation and amplify impact in the non-profit sector."
-permalink: /partnerships/
+permalink: /partnerships/index.html
 ---
 
 At Tuba Tech Dynamics, we believe that impactful change happens through collaboration. By partnering with organizations that share our vision, we can multiply the benefits of our technology solutions and extend our reach within the non-profit sector. Together, we can help even more non-profits achieve their missions through innovative, scalable technology.
